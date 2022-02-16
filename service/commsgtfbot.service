@@ -1,0 +1,14 @@
+[Unit]
+Description=Keeps CommsGTFBot running
+After=graphical.target
+
+[Service]
+Type=idle
+Restart=always
+RestartSec=10
+User=pi
+Environment=DISPLAY=:0
+ExecStart=python3 /home/pi/CommsGTFBot/bot.py
+
+[Install]
+WantedBy=graphical.target

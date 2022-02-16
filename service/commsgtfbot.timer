@@ -1,0 +1,10 @@
+[Unit]
+Description=Starts CommsGTFBot
+After=graphical.target
+
+[Timer]
+OnBootSec=120 
+Unit=commsgtfbot.service
+
+[Install]
+WantedBy=graphical.target
